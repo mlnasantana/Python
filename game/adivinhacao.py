@@ -10,9 +10,13 @@ print("Você digitou", chute_str)
 
 chute = int(chute_str)
 
-if numero_secreto != chute:
-    print("Você errou")
+if numero_secreto == chute:
+    print("Você acertou")
 else:
-    print("Voce acertou")
+    if(chute > numero_secreto):
+        print("Voce errou! O seu chute foi maior do que o numero secreto.")
+    elif(chute < numero_secreto):
+         print("Voce errou! O seu chute foi menor do que o numero secreto.")
+
 
 print("Fim do jogo")
